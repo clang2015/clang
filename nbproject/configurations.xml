@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="C:/Users/weizhengtian/Documents/NetBeansProjects/clang" name="0">
+      <df name="classes">
+        <in>array.c</in>
+      </df>
+      <in>ComplexMakefile</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>C:/Users/weizhengtian/Documents/NetBeansProjects/clang/makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>C:\Users\weizhengtian\Documents\NetBeansProjects\clang</Elem>
+  </sourceRootList>
+  <projectmakefile>C:/Users/weizhengtian/Documents/NetBeansProjects/clang/makefile.txt</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>C:/Users/weizhengtian/Documents/NetBeansProjects/clang</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f makefile.txt</buildCommand>
+          <cleanCommand>${MAKE} -f makefile.txt clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/classes/ComplexMakefile"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="classes/array.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <folder path="0">
+        <cTool>
+          <incFile>
+            <pElem>C:/MinGW/include</pElem>
+          </incFile>
+        </cTool>
+      </folder>
+    </conf>
+  </confs>
+</configurationDescriptor>

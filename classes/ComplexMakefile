@@ -1,0 +1,38 @@
+## -*- Makefile -*-
+##
+## Makefile created by Oracle Solaris Studio.
+CC = gcc
+BASICOPTS = -g
+CFLAGS = $(BASICOPTS)
+
+
+TARGETDIR=GNU-x86-Windows
+
+
+all: $(TARGETDIR)/array.exe
+
+OBJS =  $(TARGETDIR)/array.o
+DEPLIBS = 
+SYSLIBS = -static -lXm -lXt -lXext -lX11 -lm 
+USERLIBS = 
+LDLIBS = 
+
+
+
+$(TARGETDIR)/array.exe: $(TARGETDIR) $(OBJS) $(DEPLIBS)
+	$(LINK.c) $(CFLAGS) $(CPPFLAGS) -o $@ $(OBJS) $(LDLIBS)
+
+
+$(TARGETDIR)/array.o:  array.c
+	$(COMPILE.c) $(CFLAGS) $(CPPFLAGS) -o $@ array.c
+
+
+
+clean:
+	rm -f $(TARGETDIR)/array.o
+	rm -f -r $(TARGETDIR)
+
+
+$(TARGETDIR):
+	mkdir -p $(TARGETDIR)
+
