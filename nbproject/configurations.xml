@@ -13,6 +13,7 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>C:/Users/weizhengtian/Documents/NetBeansProjects/clang/makefile</itemPath>
     </logicalFolder>
+    <itemPath>C:/Users/weizhengtian/Documents/NetBeansProjects/clang/.gitignore</itemPath>
   </logicalFolder>
   <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
   <sourceRootList>
@@ -36,6 +37,11 @@
           <executablePath></executablePath>
         </makeTool>
       </makefileType>
+      <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/.gitignore"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/classes/ComplexMakefile"
             ex="false"
             tool="3"

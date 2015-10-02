@@ -11,6 +11,7 @@
       </df>
       <in>ComplexMakefile</in>
     </df>
+    <itemPath>C:/Users/weizhengtian/Documents/NetBeansProjects/clang/.gitignore</itemPath>
   </logicalFolder>
   <projectmakefile>C:/Users/weizhengtian/Documents/NetBeansProjects/clang/makefile.txt</projectmakefile>
   <confs>
@@ -51,7 +52,7 @@
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
         </runcommandpicklist>
         <runcommand>"${OUTPUT_PATH}"</runcommand>
-        <rundir></rundir>
+        <rundir>.</rundir>
         <buildfirst>false</buildfirst>
         <terminal-type>0</terminal-type>
         <remove-instrumentation>0</remove-instrumentation>
