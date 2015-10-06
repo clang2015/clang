@@ -2,7 +2,7 @@
 
 int foo() {
 
-    return 2;
+    return 3;
 }
 
 int main(int argc, char ** argv) {

@@ -7,9 +7,9 @@ CFLAGS = $(BASICOPTS) -I../include
 TARGETDIR=GNU-x86-Windows
 
 
-all: $(TARGETDIR) $(TARGETDIR)/array.exe 
+all: $(TARGETDIR) $(CLEANTARGET) $(OBJS)  $(TARGETDIR)/array.exe
 
-OBJS =  $(TARGETDIR)/array.o
+OBJS =  $(TARGETDIR)/array.o $(TARGETDIR)/stringutils.o
 DEPLIBS = 
 SYSLIBS = -static -lXm -lXt -lXext -lX11 -lm 
 USERLIBS = 
@@ -21,9 +21,14 @@ $(TARGETDIR)/array.exe: $(OBJS) $(DEPLIBS)
 $(TARGETDIR)/array.o:  array.c
 	$(COMPILE.c) $(CFLAGS) $(CPPFLAGS) -o $@ array.c
 
+$(TARGETDIR)/stringutils.o:  stringutils.c
+	$(COMPILE.c) $(CFLAGS) $(CPPFLAGS) -o $@ stringutils.c
+
 clean:
-	rm -f $(TARGETDIR)/array.o
-	rm -f -r $(TARGETDIR)
+	rm -f $(TARGETDIR)/*.o
+
+$(CLEANTARGET):
+	rm -f $(TARGETDIR)/array.exe
 
 $(TARGETDIR):
 	mkdir -p $(TARGETDIR)
