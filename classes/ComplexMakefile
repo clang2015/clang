@@ -1,7 +1,7 @@
 ## -*- Makefile -*-
 CC = gcc
 BASICOPTS = -g
-CFLAGS = $(BASICOPTS)
+CFLAGS = $(BASICOPTS) -I../include
 
 
 TARGETDIR=GNU-x86-Windows

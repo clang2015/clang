@@ -4,8 +4,11 @@
     <df root="C:/Users/weizhengtian/Documents/NetBeansProjects/clang" name="0">
       <df name="classes">
         <in>array.c</in>
+        <in>stringutils.c</in>
       </df>
-      <in>ComplexMakefile</in>
+      <df name="include">
+        <in>stringutils.h</in>
+      </df>
     </df>
     <logicalFolder name="ExternalFiles"
                    displayName="重要文件"
@@ -42,12 +45,12 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/classes/ComplexMakefile"
+      <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/classes/array.c"
             ex="false"
-            tool="3"
+            tool="0"
             flavor2="0">
       </item>
-      <item path="classes/array.c" ex="false" tool="0" flavor2="0">
+      <item path="classes/stringutils.c" ex="false" tool="0" flavor2="0">
       </item>
       <folder path="0">
         <cTool>
@@ -56,6 +59,8 @@
           </incFile>
         </cTool>
       </folder>
+      <item path="include/stringutils.h" ex="false" tool="3" flavor2="0">
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>
