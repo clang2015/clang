@@ -3,6 +3,12 @@
 #include <stdlib.h>
 
 int main(int argc, char ** argv){
+    char * s = NULL;
+    if (s == NULL){
+        printf("s is null\n");
+    }
+    s = "abc";
+    printf("length of s is %d\n", strlen(s));
     char * nums = "123";
     char cbuf[1024] = {0};
     printf("string [%s] to number [%d]\n", nums, atoi(nums));
