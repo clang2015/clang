@@ -5,6 +5,10 @@ int foo() {
     return 3;
 }
 
+struct IterStru {
+    int finished;
+};
+
 int main(int argc, char ** argv) {
     int array[2] = {1, 2};
     char * parray[3] = {"123", "456", ""};

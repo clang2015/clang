@@ -7,13 +7,17 @@ CFLAGS = $(BASICOPTS) -I../include
 TARGETDIR=GNU-x86-Windows
 
 
-all: $(TARGETDIR) $(CLEANTARGET) $(OBJS)  $(TARGETDIR)/array.exe
-
+all: $(TARGETDIR) $(CLEANTARGET) $(OBJS) $(OBJS1) $(TARGETDIR)/array.exe $(TARGETDIR)/stringtest.exe
 OBJS =  $(TARGETDIR)/array.o $(TARGETDIR)/stringutils.o
+OBJS1 =  $(TARGETDIR)/stringtest.o
 DEPLIBS = 
 SYSLIBS = -static -lXm -lXt -lXext -lX11 -lm 
 USERLIBS = 
 LDLIBS = 
+
+$(TARGETDIR)/stringtest.exe: $(OBJS1) $(DEPLIBS)
+	$(LINK.c) $(CFLAGS) $(CPPFLAGS) -o $@ $(OBJS1) $(LDLIBS)
+
 
 $(TARGETDIR)/array.exe: $(OBJS) $(DEPLIBS)
 	$(LINK.c) $(CFLAGS) $(CPPFLAGS) -o $@ $(OBJS) $(LDLIBS)
@@ -24,11 +28,14 @@ $(TARGETDIR)/array.o:  array.c
 $(TARGETDIR)/stringutils.o:  stringutils.c
 	$(COMPILE.c) $(CFLAGS) $(CPPFLAGS) -o $@ stringutils.c
 
+$(TARGETDIR)/stringtest.o:  stringtest.c
+	$(COMPILE.c) $(CFLAGS) $(CPPFLAGS) -o $@ stringtest.c
+
 clean:
 	rm -f $(TARGETDIR)/*.o
 
 $(CLEANTARGET):
-	rm -f $(TARGETDIR)/array.exe
+	rm -f $(TARGETDIR)/array.exe $(TARGETDIR)/stringtest.exe
 
 $(TARGETDIR):
 	mkdir -p $(TARGETDIR)
