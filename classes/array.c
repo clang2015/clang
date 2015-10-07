@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int foo(int a) {
-    while (1){
+    while (1) {
         break;
     }
     return a + 3;
@@ -23,7 +23,7 @@ int main(int argc, char ** argv) {
         printf("%d\n", array[i]);
     }
     foo(100);
-    for(i = 0; i < sizeof(parray) / sizeof(char *); i++){
+    for (i = 0; i < sizeof (parray) / sizeof (char *); i++) {
         printf("%s\n", parray[i]);
     }
     return 0;

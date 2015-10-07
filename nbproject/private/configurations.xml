@@ -2,10 +2,16 @@
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="C:/Users/weizhengtian/Documents/NetBeansProjects/clang" name="0">
+      <df name="algorithm">
+        <in>ArrayList.c</in>
+        <in>algComplexMakefile</in>
+      </df>
       <df name="classes">
         <df name="GNU-x86-Windows">
         </df>
         <in>array.c</in>
+        <in>foo.c</in>
+        <in>stringfunc.c</in>
         <in>stringtest.c</in>
         <in>stringutils.c</in>
         <in>test.c</in>
