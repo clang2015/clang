@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-int foo() {
-
-    return 3;
+int foo(int a) {
+    while (1){
+        break;
+    }
+    return a + 3;
 }
 
 struct IterStru {
@@ -20,6 +22,7 @@ int main(int argc, char ** argv) {
     for (; i < sizeof (array) / sizeof (int); i++) {
         printf("%d\n", array[i]);
     }
+    foo(100);
     for(i = 0; i < sizeof(parray) / sizeof(char *); i++){
         printf("%s\n", parray[i]);
     }

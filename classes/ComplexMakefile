@@ -7,15 +7,18 @@ CFLAGS = $(BASICOPTS) -I../include
 TARGETDIR=GNU-x86-Windows
 
 
-all: $(TARGETDIR) $(CLEANTARGET) $(OBJS) $(OBJS1) $(OBJS2) $(TARGETDIR)/array.exe $(TARGETDIR)/stringtest.exe \
+all: $(TARGETDIR) $(CLEANTARGET) $(OBJS) $(OBJS1) $(OBJS2) \
+	$(TARGETDIR)/libcfunc.a \
+	$(TARGETDIR)/array.exe $(TARGETDIR)/stringtest.exe \
 	$(TARGETDIR)/test.exe
-OBJS =  $(TARGETDIR)/array.o $(TARGETDIR)/stringutils.o
+OBJS =  $(TARGETDIR)/array.o $(TARGETDIR)/stringutils.o $(TARGETDIR)/stringfunc.o
 OBJS1 =  $(TARGETDIR)/stringtest.o 
 OBJS2 = $(TARGETDIR)/test.o
 DEPLIBS = 
 SYSLIBS = -static -lXm -lXt -lXext -lX11 -lm 
 USERLIBS = 
 LDLIBS = 
+ARFLAGS = -as
 
 $(TARGETDIR)/stringtest.o:  stringtest.c
 	$(COMPILE.c) $(CFLAGS) $(CPPFLAGS) -o $@ stringtest.c
@@ -37,12 +40,18 @@ $(TARGETDIR)/array.o:  array.c
 
 $(TARGETDIR)/stringutils.o:  stringutils.c
 	$(COMPILE.c) $(CFLAGS) $(CPPFLAGS) -o $@ stringutils.c
+	
+$(TARGETDIR)/stringfunc.o:  stringfunc.c
+	$(COMPILE.c) $(CFLAGS) $(CPPFLAGS) -o $@ stringfunc.c	
 
 clean:
 	rm -f $(TARGETDIR)/*.o
 
 $(CLEANTARGET):
 	rm -f $(TARGETDIR)/array.exe $(TARGETDIR)/stringtest.exe
+	
+$(TARGETDIR)/libcfunc.a:
+	ar $(ARFLAGS) -o $@ $(OBJS)
 
 $(TARGETDIR):
 	mkdir -p $(TARGETDIR)

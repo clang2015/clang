@@ -6,10 +6,16 @@
         <df name="GNU-x86-Windows">
         </df>
         <in>array.c</in>
+        <in>stringtest.c</in>
+        <in>stringutils.c</in>
+        <in>test.c</in>
+      </df>
+      <df name="include">
+        <in>datastruct.h</in>
+        <in>stringutils.h</in>
       </df>
       <df name="libs">
       </df>
-      <in>ComplexMakefile</in>
     </df>
     <itemPath>C:/Users/weizhengtian/Documents/NetBeansProjects/clang/.gitignore</itemPath>
   </logicalFolder>

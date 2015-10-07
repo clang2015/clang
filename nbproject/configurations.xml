@@ -4,9 +4,11 @@
     <df root="C:/Users/weizhengtian/Documents/NetBeansProjects/clang" name="0">
       <df name="classes">
         <in>array.c</in>
+        <in>stringtest.c</in>
         <in>stringutils.c</in>
       </df>
       <df name="include">
+        <in>datastruct.h</in>
         <in>stringutils.h</in>
       </df>
     </df>
@@ -50,17 +52,37 @@
             tool="0"
             flavor2="0">
       </item>
-      <item path="classes/stringutils.c" ex="false" tool="0" flavor2="0">
+      <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/classes/stringtest.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/classes/stringutils.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/include/datastruct.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/weizhengtian/Documents/NetBeansProjects/clang/include/stringutils.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <folder path="0">
         <cTool>
+          <standard>9</standard>
+          <incDir>
+            <pElem>C:/MinGW/include</pElem>
+          </incDir>
           <incFile>
             <pElem>C:/MinGW/include</pElem>
           </incFile>
         </cTool>
       </folder>
-      <item path="include/stringutils.h" ex="false" tool="3" flavor2="0">
-      </item>
     </conf>
   </confs>
 </configurationDescriptor>
